@@ -1,0 +1,138 @@
+#page2 {
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 0vw 8vw;
+    padding-bottom: 3vw;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    justify-content: space-between;
+}
+
+#page2-left {
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3vw 0;
+}
+
+#page2-left p {
+    font-size: 0.8vw;
+}
+
+#page2-left h5 {
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+
+#page2-right {
+    height: 100%;
+    width: 50%;
+    /* background-color: #333; */
+}
+
+.right-elem {
+    margin-top: 10px;
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 1px solid #333;
+    padding-left: 2vw;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.right-elem:hover {
+    background-color: #191c1e;
+    transform: translateY(-5%);
+}
+
+
+.right-elem h2 {
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.right-elem img {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    scale: 0;
+}
+
+
+@media (max-width: 1024px) {
+    #page2 {
+      flex-direction: column; /* Stack the left and right sections vertically */
+      padding: 5vw;
+    }
+  
+    #page2-left, #page2-right {
+      width: 100%; /* Full width for both*/
+      text-align: center; /* Center align text */
+    }
+  
+    #page2-left h1 {
+      font-size: 8vw; /* Increase size of "AREAS OF EXPERTISE" */
+      margin: 0 auto; /* Center align the heading */
+    }
+  
+    #page2-left h5 {
+      display: none; /* Remove the descriptive paragraph */
+    }
+  
+    #page2-left img {
+      display: none; /* Remove  image */
+    }
+  
+    .right-elem {
+      padding: 3vw 0; /* Adjust padding for better spacing */
+      border-bottom: 1px solid #333; /* Maintain separators */
+      text-align: center; /* Center-align the text */
+    }
+  
+    .right-elem h2 {
+      font-size: 5vw; /* Adjust heading size */
+      margin-bottom: 2vw;
+    }
+  
+    .right-elem p {
+      font-size: 3vw; /* Decrease description text size */
+      margin: 0 2vw; /* Add horizontal spacing for readability */
+    }
+  
+    .img-services {
+      display: none; /* Hide images on smaller screens */
+    }
+  
+    .right-elem:hover {
+      transform: none; /* Disable hover effects on mobile */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #page2-left h1 {
+      font-size: 8vw; /* Further increase size for smaller devices */
+    }
+  
+    .right-elem h2 {
+      font-size: 6vw; /* Further adjust heading size */
+    }
+  
+    .right-elem p {
+      font-size: 4vw; /* Further decrease description text size */
+    }
+  
+    .right-elem {
+      padding: 4vw 0; /* Adjust padding for compact spacing */
+    }
+  }
+  
