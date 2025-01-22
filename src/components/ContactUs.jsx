@@ -32,13 +32,13 @@ const ContactUs = () => {
                 <h2 className="font-bold mb-2">
                   <div className="mt-6 space-y-1">
                     <a
-                      href="mailto:hello@studio-mindset.co.uk"
+                      href="mailto:nexacrft@gmail.com"
                       className="block hover:text-white"
                     >
                       nexacrft@gmail.com
                     </a>
                     <a
-                      href="tel:02890291846"
+                      href="tel:08237006990"
                       className="block hover:text-white"
                     >
                       +91 8237006990
