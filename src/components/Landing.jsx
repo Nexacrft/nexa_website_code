@@ -18,6 +18,7 @@ const Landing = () => {
         <AdvancedImage
           cldImg={nexalogomain}
           className="mt-2 h-[80px] w-[80px] m-auto"
+          alt="LOGO"
         />
         <div className="border-2 border-white w-[90%] m-auto h-[75%] flex flex-col rounded-2xl">
           <div className=" h-[60%] border-b-2 flex flex-col md:flex-row">
