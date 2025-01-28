@@ -1,6 +1,18 @@
-import React from "react";
+import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen/index";
 
 const AboutUs = () => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "dmo8bqzrx",
+    },
+  });
+  const aboutusVid = cld
+    .video("aboutusVid_lsais2")
+    .format("auto")
+    .quality("auto");
+  const ourteam = cld.image("ourteam_w5uujj").format("auto").quality("auto");
+
   return (
     <div className="faq-con">
       <div className=" text-center">
@@ -25,13 +37,13 @@ const AboutUs = () => {
 
           <div className="flex flex-col gap-5 md:flex-row">
             <div className="aboutus-video w-full md:w-1/2 border-2 h-[400px] rounded-2xl box-2">
-              <video
-                src="/assets/aboutusVid.mp4"
+              <AdvancedVideo
+                cldVid={aboutusVid}
                 muted
                 autoPlay
                 loop
                 playsInline
-              ></video>
+              />
             </div>
             <div className="aboutus-our-team border-2 border-white w-full md:w-1/2  h-[400px] rounded-2xl box-3  flex relative">
               {/* <h1 className="text-black text-3xl md:text-4xl lg:text-5xl rotate-[11deg] mr-2 anton-sc-regular text-center w-[60%] mt-36 lg:mt-28 lg:mr-10">I CAN'T <br /> BUT WE CAN .</h1>
@@ -39,10 +51,9 @@ const AboutUs = () => {
                 <h1 className="text-7xl text-center text-[#FaF4da] anton-sc-regular py-6 px-10">Our team</h1>
                 <p className=" text-sm text-right px-5  font-semibold text-[#F1F4da]">Top Talent with 1+ years of experience in building products. Give us a try and you won't regret.</p>
                 </div> */}
-              <img
-                src="/assets/ourteam.png"
+              <AdvancedImage
+                cldImg={ourteam}
                 className="w-full rounded-2xl p-2"
-                alt=""
               />
             </div>
           </div>
@@ -51,7 +62,7 @@ const AboutUs = () => {
         <div className="w-full lg:w-1/4 flex flex-col gap-5">
           <div className="h-[300px] w-full bg-[#F1F660] rounded-2xl rightbox-1 flex flex-col justify-center items-center">
             <h1 className="text-black font-bold text-3xl text-center py-2 px-3 md:text-4xl anton-sc-regular">
-              We don't just deliver, we elevate.
+              We don&apos;t just deliver, we elevate.
             </h1>
             <button className="bg-black px-5 py-4 text-white rounded-2xl mt-2 monigue-font text-2xl">
               🟢 BACK TO TOP

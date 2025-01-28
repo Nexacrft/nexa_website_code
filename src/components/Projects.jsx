@@ -1,4 +1,3 @@
-import React from "react";
 import Integrations from "../utils/Integrations/Inetgrations";
 const tools = [
   {
@@ -8,12 +7,12 @@ const tools = [
   },
   {
     name: "Notion",
-    icon:  "/assets/projects/project2.jpeg",
+    icon: "/assets/projects/project2.jpeg",
     description: "Notion is an all-in-one workspace for notes and tasks.",
   },
   {
     name: "Slack",
-    icon:  "/assets/projects/project3.jpeg",
+    icon: "/assets/projects/project3.jpeg",
     description: "Slack is a powerful team communication platform.",
   },
   {
@@ -23,7 +22,7 @@ const tools = [
   },
   {
     name: "Framer",
-    icon:  "/assets/projects/project5.jpeg",
+    icon: "/assets/projects/project5.jpeg",
     description: "Framer is a professional website prototyping tool.",
   },
   {
@@ -63,19 +62,23 @@ const tools = [
   },
 ];
 
-
 const Projects = () => {
   return (
     <div className="integrations-con  py-24 overflow-hidden">
       <div className="flex flex-col gap-10">
         <div className=" text-center flex flex-col lg:flex-row justify-between px-20 items-center">
-           <div>
-           <h1 className="monigue-font text-6xl">OUR</h1>
-           <h1 className="text-6xl md:text-9xl monigue-font text-[#F1F660]"> PROJECTS</h1>
-           </div>
-           <div>
-            <h1 className="text-3xl anton-sc-regular text-[#f4fada]">" Cool way to show projects " <br /> ~ Sun Tzu</h1>
-           </div>
+          <div>
+            <h1 className="monigue-font text-6xl">OUR</h1>
+            <h1 className="text-6xl md:text-9xl monigue-font text-[#F1F660]">
+              {" "}
+              PROJECTS
+            </h1>
+          </div>
+          <div>
+            <h1 className="text-3xl anton-sc-regular text-[#f4fada]">
+              &quot; Cool way to show projects &quot; <br /> ~ Sun Tzu
+            </h1>
+          </div>
         </div>
         <div className="flex justify-center items-center">
           <div
@@ -89,7 +92,10 @@ const Projects = () => {
           >
             <Integrations data={tools.slice(0, 4)} className="hidden md:flex" />
             <Integrations data={tools.slice(4, 8)} reverse />
-    <Integrations data={tools.slice(8, 12)} className="hidden md:flex" />
+            <Integrations
+              data={tools.slice(8, 12)}
+              className="hidden md:flex"
+            />
           </div>
         </div>
       </div>
