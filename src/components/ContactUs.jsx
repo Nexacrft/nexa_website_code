@@ -32,7 +32,7 @@ const ContactUs = () => {
                 <h2 className="font-bold mb-2">
                   <div className="mt-6 space-y-1">
                     <a
-                      href="mailto:nexacrft@gmail.com"
+                      href="mailto:nexaacrft@gmail.com"
                       className="block hover:text-white"
                     >
                       nexacrft@gmail.com
