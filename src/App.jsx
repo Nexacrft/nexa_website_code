@@ -1,4 +1,3 @@
-import React from "react";
 import Landing from "./components/Landing";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import OurWork from "./components/OurWork";
