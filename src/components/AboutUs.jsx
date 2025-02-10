@@ -11,7 +11,7 @@ const AboutUs = () => {
     .video("aboutusVid_lsais2")
     .format("auto")
     .quality("auto");
-  const ourteam = cld.image("ourteam_w5uujj").format("auto").quality("auto");
+  const ourteam = cld.image("ourteam_itzdli").format("auto").quality("auto");
 
   return (
     <div className="faq-con">
@@ -29,7 +29,7 @@ const AboutUs = () => {
               thought that focusing on just one area was not much fun, so we
               learned the whole process: planning, building and launching
               websites. This allowed us to specialize in storytelling, using
-              skills like branding, design and motion, to drive the user’s
+              skills like branding, design and motion, to drive the user&apos;s
               attention to the right places and create more engaging and
               memorable experiences.
             </p>
