@@ -71,7 +71,7 @@ const AboutUs = () => {
           <div className="aboutus-extra-info h-[500px] w-full border-2 bg-white border-white rounded-2xl rightbox-2 relative flex flex-col gap-4 items-center lg:items-start">
             <img
               src="https://i.pinimg.com/736x/42/bf/e5/42bfe5d7e452fa010bdda1d25c526704.jpg"
-              alt=""
+              alt="Black-Image"
               className="rounded-2xl"
             />
             <h1 className="text-black text-5xl  px-5  monigue-font">
