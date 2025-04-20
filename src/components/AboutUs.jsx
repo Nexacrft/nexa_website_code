@@ -1,5 +1,6 @@
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen/index";
+import Button from "../utils/buttons/Button";
 
 const AboutUs = () => {
   const cld = new Cloudinary({
@@ -60,9 +61,13 @@ const AboutUs = () => {
               />
             </div>
             <div className="aboutus-our-team bg-[#fcdb67] text-white w-full md:w-1/2 h-auto rounded-2xl relative p-5 object">
-              <h1 className="text-[#191c1e] text-center  tracking-tight text-5xl md:text-4xl bebas-neue-regular">Step Into Digital Future</h1>
+              <h1 className="text-black text-center  tracking-tight text-2xl md:text-4xl font-semibold">Step Into Digital Future</h1>
               <p className="text-slate-700 text-center text-sm md:text-md">Contact us and elevate your digital process instantly</p>
-              <h1 className="text-[#191c1e] text-4xl md:text-7xl bebas-neue-regular mt-10 text-center">Projects Delivered</h1>
+              <div className="flex flex-col justify-start">
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#191c1e] to-[#4b4e50] text-5xl md:text-7xl w-full text-center bebas-neue-regular mt-10">
+  Projects <br /> Delivered
+</h1>
+
               <div className="flex justify-center items-end gap-4 md:gap-10 mt-5">
                 <div>
                   <h1 className="text-black text-2xl md:text-4xl bebas-neue-regular">Websites</h1>
@@ -74,7 +79,9 @@ const AboutUs = () => {
                 <div><h1  className="text-black text-2xl md:text-4xl bebas-neue-regular">Reels</h1>
                 <h1  className="text-black text-2xl">25+</h1></div>
               </div>
-              <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-metaverse-background_23-2149259640.jpg?t=st=1745120722~exp=1745124322~hmac=b25128f3f0dd09fce43d884acf53da0b9fc4435e0974662ff7160950a7ddabe2&w=1380" alt="" className="w-full mix-blend-overlay absolute top-0 left-0 h-full"/>
+              </div>
+             
+              <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-metaverse-background_23-2149259640.jpg?t=st=1745120722~exp=1745124322~hmac=b25128f3f0dd09fce43d884acf53da0b9fc4435e0974662ff7160950a7ddabe2&w=1380" alt="" className="w-full mix-blend-overlay absolute top-0 left-0 h-full"/>       
             </div>
           </div>
         </div>
@@ -92,8 +99,16 @@ const AboutUs = () => {
 </button>
 
           </div>
-          <div className="aboutus-extra-info h-[500px] w-full border-2 p-5 border-white rounded-2xl hidden md:block">
-                <h1>PRICING</h1>
+          <div className="aboutus-extra-info text-black h-[500px] w-full border-2 p-5 bg-[wheat] border-white rounded-2xl">
+                <h1 className="font-semibold text-center text-6xl bebas-neue-regular">HAVE ANY QUESTIONS?</h1>
+               <div className="flex items-center justify-center mt-5">
+               <img src="/assets/golf-cart.png" alt="" height={200} width={200}/>
+               </div>
+               <h1 className="text-md text-gray-700 text-center font-semibold mt-5">Write us down to -</h1>
+               <div className="flex  items-center gap-4">
+                <img src="/assets/mail-box.png" alt="" className="h-12 w-12"/>
+                <h1 className="text-lg md:text-2xl text-center font-semibold">nexacrft@gmail.com</h1>
+                </div>
           </div>
         </div>
       </div>
