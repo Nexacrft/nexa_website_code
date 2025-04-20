@@ -13,6 +13,20 @@ const AboutUs = () => {
     .quality("auto");
   const ourteam = cld.image("ourteam_itzdli").format("auto").quality("auto");
 
+  const scrollToTopSlow = () => {
+    const scrollDuration = 1000; // duration in ms
+    const scrollStep = -window.scrollY / (scrollDuration / 15);
+  
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15);
+  };
+  
+
   return (
     <div className="faq-con">
       <div className=" text-center">
@@ -35,8 +49,8 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-5 md:flex-row">
-            <div className="aboutus-video w-full md:w-1/2 border-2 h-[400px] rounded-2xl box-2">
+          <div className="flex flex-col gap-5 md:flex-row ">
+            <div className="aboutus-video w-[full] md:w-1/2 border-2 h-[400px] rounded-2xl box-2">
               <AdvancedVideo
                 cldVid={aboutusVid}
                 muted
@@ -45,16 +59,22 @@ const AboutUs = () => {
                 playsInline
               />
             </div>
-            <div className="aboutus-our-team border-2 border-white w-full md:w-1/2  h-[400px] rounded-2xl box-3  flex relative">
-              {/* <h1 className="text-black text-3xl md:text-4xl lg:text-5xl rotate-[11deg] mr-2 anton-sc-regular text-center w-[60%] mt-36 lg:mt-28 lg:mr-10">I CAN'T <br /> BUT WE CAN .</h1>
-                <div className="w-[40%] hidden lg:block mr-5">
-                <h1 className="text-7xl text-center text-[#FaF4da] anton-sc-regular py-6 px-10">Our team</h1>
-                <p className=" text-sm text-right px-5  font-semibold text-[#F1F4da]">Top Talent with 1+ years of experience in building products. Give us a try and you won't regret.</p>
-                </div> */}
-              <AdvancedImage
-                cldImg={ourteam}
-                className="w-full rounded-2xl p-2"
-              />
+            <div className="aboutus-our-team bg-[#fcdb67] text-white w-full md:w-1/2 h-auto rounded-2xl relative p-5 object">
+              <h1 className="text-[#191c1e] text-center  tracking-tight text-5xl md:text-4xl bebas-neue-regular">Step Into Digital Future</h1>
+              <p className="text-slate-700 text-center text-sm md:text-md">Contact us and elevate your digital process instantly</p>
+              <h1 className="text-[#191c1e] text-4xl md:text-7xl bebas-neue-regular mt-10 text-center">Projects Delivered</h1>
+              <div className="flex justify-center items-end gap-4 md:gap-10 mt-5">
+                <div>
+                  <h1 className="text-black text-2xl md:text-4xl bebas-neue-regular">Websites</h1>
+                  <h1  className="text-black text-2xl">8+</h1>
+                </div>
+                <div><h1  className="text-black text-2xl md:text-4xl bebas-neue-regular">Designs
+                  </h1>
+                  <h1  className="text-black text-2xl">5+</h1></div>
+                <div><h1  className="text-black text-2xl md:text-4xl bebas-neue-regular">Reels</h1>
+                <h1  className="text-black text-2xl">25+</h1></div>
+              </div>
+              <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-metaverse-background_23-2149259640.jpg?t=st=1745120722~exp=1745124322~hmac=b25128f3f0dd09fce43d884acf53da0b9fc4435e0974662ff7160950a7ddabe2&w=1380" alt="" className="w-full mix-blend-overlay absolute top-0 left-0 h-full"/>
             </div>
           </div>
         </div>
@@ -64,23 +84,16 @@ const AboutUs = () => {
             <h1 className="text-black font-bold text-3xl text-center py-2 px-3 md:text-4xl anton-sc-regular">
               We don&apos;t just deliver, we elevate.
             </h1>
-            <button className="bg-black px-5 py-4 text-white rounded-2xl mt-2 monigue-font text-2xl">
-              🟢 BACK TO TOP
-            </button>
+            <button
+  onClick= {scrollToTopSlow}
+  className="bg-black px-5 py-4 text-white rounded-2xl mt-2 monigue-font text-2xl"
+>
+  🟢 BACK TO TOP
+</button>
+
           </div>
-          <div className="aboutus-extra-info h-[500px] w-full border-2 bg-white border-white rounded-2xl rightbox-2 relative flex flex-col gap-4 items-center lg:items-start">
-            <img
-              src="https://i.pinimg.com/736x/42/bf/e5/42bfe5d7e452fa010bdda1d25c526704.jpg"
-              alt="Black-Image"
-              className="rounded-2xl"
-            />
-            <h1 className="text-black text-5xl  px-5  monigue-font">
-              Wanna Talk? <br />
-              Send us a message{" "}
-            </h1>
-            <h2 className=" px-5 text-2xl tracking-wider monigue-font text-black">
-              nexacrft@gmail.com
-            </h2>
+          <div className="aboutus-extra-info h-[500px] w-full border-2 p-5 border-white rounded-2xl hidden md:block">
+                <h1>PRICING</h1>
           </div>
         </div>
       </div>

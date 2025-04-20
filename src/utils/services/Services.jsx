@@ -76,7 +76,7 @@ const Services = () => {
           </h2>
           <p className="text-gray-400">Crafting intuitive and visually engaging designs that enhance user experience and elevate your digital presence.</p>
           <img
-            src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+            src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2024/04/63ee5691aed927ed11062b34110a8667.jpg"
             alt=""
             className="img-services  top-[10%] left-[-20%]"
           />
@@ -87,7 +87,7 @@ const Services = () => {
           </h2>
           <p className="text-gray-400">Crafting intuitive and visually engaging designs that enhance user experience and elevate your digital presence.</p>
           <img
-            src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+          src="https://orgzit.com/blog/wp-content/uploads/2020/06/What-is-No-code-Developmet.png"
             alt=""
             className="img-services top-[10%] left-[-20%]"
 

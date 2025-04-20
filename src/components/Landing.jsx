@@ -27,22 +27,9 @@ const Landing = () => {
                 . FOR BRANDS . FOR ENTERPRISE
               </h2>
             </div>
-            <div className="w-[100%] h-full flex">
-              <AdvancedImage cldImg={image} className="w-[100%]" />
-              <div className="text-white md:flex md:flex-col gap-4 text-center px-4 bebas-neue-regular text-[18px] hidden">
-                <div>
-                  <h1 className="mt-4">PROJECTS </h1>
-                  <h2 className="text-xl">5 +</h2>
-                </div>
-                <div className="border-t-2 border-[#F1F660]">
-                  <h1 className="mt-2">CLIENT SATISFACTION </h1>
-                  <h2>⭐⭐⭐⭐</h2>
-                </div>
-                <div className="border-t-2 border-[#F1F660]">
-                  <h1 className="mt-2">DESIGNS DELIVERED </h1>
-                  <h2 className="text-xl">3 +</h2>
-                </div>
-              </div>
+            <div className="w-full h-full flex ">
+              <img src="https://usfolk.co.uk/wp-content/uploads/2016/05/TV-near-final-twitter-1024x737.png" alt="" className="h-[full] w-full object-cover object-top "/>
+            
             </div>
           </div>
           <div className="h-[40%] flex">
