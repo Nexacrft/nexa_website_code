@@ -5,6 +5,7 @@ import Services from "./utils/services/Services";
 import Projects from "./components/Projects";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
       <Projects />
       <AboutUs />
       <ContactUs />
+      <Analytics />
     </ReactLenis>
   );
 }
 
 export default App;
+
