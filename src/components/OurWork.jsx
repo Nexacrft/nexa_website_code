@@ -7,7 +7,6 @@ const OurWork = () => {
       cloudName: "dmo8bqzrx",
     },
   });
-
   const image1 = cld.image("1_i6owfk").format("auto").quality("auto");
   const image2 = cld.image("2_qfslsh").format("auto").quality("auto");
   const image3 = cld.image("3_otm65z").format("auto").quality("auto");
@@ -16,56 +15,119 @@ const OurWork = () => {
   const image6 = cld.image("6_szkpvd").format("auto").quality("auto");
 
   return (
-    <div className="work-con mt-20">
-      <div className="flex justify-center items-start h-[200vh] text-white relative">
-        <div className="sticky top-[30%] md:top-[40%] z-10 text-center">
-          <h1 className=" text-4xl md:text-9xl font-bold text-center anton-sc-regular tracking-wider text-[#faf4da]">
-            Made with <br></br> NEXACRFT
+    <div className="work-con md:mt-20">
+      {/* Mobile Layout */}
+      <div className="block lg:hidden">
+        <div className="text-center mb-8 px-4">
+          <h1 className="text-5xl sm:text-4xl font-bold anton-sc-regular tracking-wider text-[#faf4da] mb-6">
+            Made with <br />
+            NEXACRFT
           </h1>
-          <button className=" text-3xl bg-[gray] rounded-2xl p-3 mt-4 bebas-neue-regular text-[#faf4da] ">
+          <button className="text-lg sm:text-xl bg-gray-600 rounded-2xl px-6 py-3 bebas-neue-regular text-[#faf4da] hover:bg-gray-500 transition-colors">
             Our Arsenal
           </button>
         </div>
-        <div className="h-[40vw] w-[30vw]  absolute z-20 top-[8%] left-[5%] md:top-[15%] md:left-[10%] md:w-[20vw] md:h-[25vw] rounded-2xl bg-cover">
+        
+        {/* Mobile Grid Layout */}
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 px-4 max-w-md mx-auto">
+          <div className="aspect-square">
+            <AdvancedImage
+              cldImg={image1}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 1"
+            />
+          </div>
+          <div className="aspect-square">
+            <AdvancedImage
+              cldImg={image2}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 2"
+            />
+          </div>
+          <div className="aspect-square opacity-75">
+            <AdvancedImage
+              cldImg={image3}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 3"
+            />
+          </div>
+          <div className="aspect-square opacity-75">
+            <AdvancedImage
+              cldImg={image4}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 4"
+            />
+          </div>
+          <div className="aspect-square">
+            <AdvancedImage
+              cldImg={image5}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 5"
+            />
+          </div>
+          <div className="aspect-square">
+            <AdvancedImage
+              cldImg={image6}
+              className="w-full h-full object-cover rounded-xl border-2 border-[wheat]"
+              alt="Project 6"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout (Original with improvements) */}
+      <div className="hidden lg:flex justify-center items-start h-[200vh] text-white relative">
+        <div className="sticky top-[40%] z-10 text-center">
+          <h1 className="text-6xl xl:text-9xl font-bold text-center anton-sc-regular tracking-wider text-[#faf4da]">
+            Made with <br />
+            NEXACRFT
+          </h1>
+          <button className="text-2xl xl:text-3xl bg-gray-600 rounded-2xl px-6 py-3 xl:p-3 mt-4 bebas-neue-regular text-[#faf4da] hover:bg-gray-500 transition-colors">
+            Our Arsenal
+          </button>
+        </div>
+        
+        {/* Desktop positioned images */}
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] absolute z-20 top-[15%] left-[10%] rounded-2xl">
           <AdvancedImage
             cldImg={image1}
-            className="rounded-2xl border-4 border-[wheat]"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat]"
+            alt="Project 1"
           />
         </div>
-        <div className="h-[40vw] w-[30vw]  absolute top-[10%] left-[60%] md:top-[17%] md:left-[70%] md:w-[20vw] md:h-[25vw]  rounded-2xl ">
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] absolute top-[17%] left-[70%] rounded-2xl">
           <AdvancedImage
             cldImg={image2}
-            className="rounded-2xl bg-cover border-4 border-[wheat]"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat]"
+            alt="Project 2"
           />
         </div>
-        <div className="h-[40vw] w-[30vw] absolute top-[13%] left-[10%] md:top-[40%] md:left-[25%] md:w-[20vw] md:h-[25vw]  rounded-2xl ">
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] absolute top-[40%] left-[25%] rounded-2xl">
           <AdvancedImage
             cldImg={image3}
-            className="rounded-2xl bg-cover border-4 border-[wheat] opacity-65"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat] opacity-65"
+            alt="Project 3"
           />
         </div>
-        <div className="h-[40vw] w-[30vw]  absolute top-[25%] left-[65%] z-20 md:top-[50%] md:left-[75%] md:w-[20vw] md:h-[25vw]  rounded-2xl ">
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] absolute top-[50%] left-[75%] z-20 rounded-2xl">
           <AdvancedImage
             cldImg={image4}
-            className="rounded-2xl bg-cover border-4 border-[wheat] opacity-65"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat] opacity-65"
+            alt="Project 4"
           />
         </div>
-        <div className="h-[40vw] w-[30vw]  z-20 top-[30%] left-[12%] absolute md:top-[65%] md:left-[13%] md:w-[20vw] md:h-[25vw]rounded-2xl ">
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] z-20 top-[65%] left-[13%] absolute rounded-2xl">
           <AdvancedImage
             cldImg={image5}
-            className="rounded-2xl bg-cover border-4 border-[wheat]"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat]"
+            alt="Project 5"
           />
         </div>
-        <div className="h-[40vw] w-[30vw] z-20 top-[35%] left-[55%] absolute md:top-[75%] md:left-[65%] md:w-[20vw] md:h-[25vw]  rounded-2xl ">
+        <div className="h-[20vw] w-[15vw] xl:h-[25vw] xl:w-[20vw] z-20 top-[75%] left-[65%] absolute rounded-2xl">
           <AdvancedImage
             cldImg={image6}
-            className="rounded-2xl bg-cover border-4 border-[wheat]"
-            alt=""
+            className="w-full h-full object-cover rounded-2xl border-4 border-[wheat]"
+            alt="Project 6"
           />
         </div>
       </div>
